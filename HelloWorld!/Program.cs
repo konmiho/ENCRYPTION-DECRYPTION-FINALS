@@ -70,7 +70,7 @@ namespace HelloWorld_
 
             while (ananab2 || (!File.Exists("BANANA KEY.txt")))
             {
-                Console.Write("INPUT KEY: ");
+                Console.Write("INPUT KEY:\t");
                 keyIP = Console.ReadLine().ToUpper();
 
                 if (keyIP.Length != 0)
@@ -92,7 +92,7 @@ namespace HelloWorld_
 
             while (ananab || !File.Exists("BANANA SPAWNER.txt") || Choice == "1")
             {
-                Console.Write("INPUT MESSAGE: ");
+                Console.Write("INPUT MESSAGE:\t");
                 mainMessage = Console.ReadLine().ToUpper();
 
                 if (mainMessage.Length != 0)
@@ -128,7 +128,7 @@ namespace HelloWorld_
             }
             keyIP = hold;
 
-            Console.Write($"\n===================================================\n\nMESSAGE: {mainMessage}");
+            Console.Write($"\n===================================================\n\nMESSAGE:\t{mainMessage}");
 
             int counter = 0;
             hold = "";
@@ -141,7 +141,7 @@ namespace HelloWorld_
                 counter++;
             }
             keyIP = hold;
-            Console.Write($"\nKEY NOW: {keyIP}");
+            Console.Write($"\nKEY NOW:\t{keyIP}");
             #endregion
 
             #region LOGIC             
@@ -162,9 +162,9 @@ namespace HelloWorld_
             }
 
             if (Choice == "1")
-                Console.Write("\nENCRYPTED: ");
+                Console.Write("\nENCRYPTED:\t");
             else if (Choice == "2")
-                Console.Write("\nDECRYPTED: ");
+                Console.Write("\nDECRYPTED:\t");
 
             for (int i = 0; i < collectedMessage.Count(); i++)
             {
